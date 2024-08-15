@@ -5,7 +5,10 @@ export default function Footer() {
     <div className="footer-area">
       <div className="footer-one">
         <div className="foot-one">
-          <h3>Let’s Work Together - </h3>
+          <h3>
+            Let’s <br />
+            Work Together -{" "}
+          </h3>
         </div>
         <div className="foot-two">
           <a href="mailto:iloriojomodel@gmail.com">

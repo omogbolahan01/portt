@@ -10,7 +10,13 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
+body {
+  max-width: 1450px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 a {
   text-decoration: unset;
   color: unset;
@@ -92,7 +98,7 @@ body {
   font-size: 3.4rem;
   font-weight: 500;
   letter-spacing: 0.07em;
-  padding-right: 6rem;
+  /* padding-right: 6rem; */
   color: #dedede;
 }
 .foot-two {
@@ -108,6 +114,7 @@ body {
   background-color: transparent;
   border: 1.56px solid #484e53;
   border-radius: 6px;
+  padding: 0.1rem 0.5rem;
 }
 .img-ftext p {
   font-family: Inter;
@@ -172,7 +179,7 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   color: #e1e1e1;
-  padding: 0.5rem 10rem;
+  padding: 0.5rem 20rem;
 }
 .home-first button {
   margin-top: 1rem;
@@ -213,7 +220,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .about-write {
-  padding: 0.5rem 15rem;
+  padding: 0.5rem 20rem;
 }
 .about-write p {
   font-family: Inter;
@@ -272,7 +279,7 @@ body {
   color: #c1c1c1;
 }
 .send-image {
-  width: 1.5rem;
+  width: 2.5rem;
 }
 .send-image img {
   width: 100%;
@@ -321,19 +328,19 @@ a:hover {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 90%;
+  width: 75%;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 .areaa {
-  width: 40%;
+  width: 25%;
   background: linear-gradient(
     121.9deg,
     rgba(28, 28, 28, 0.5) 0%,
     #050505 96.81%
   );
   padding: 1rem;
-  height: 15rem;
+  height: 14.7rem;
   border: 1px solid #2b2b2b;
   border-radius: 9px;
 }
@@ -378,7 +385,28 @@ a:hover {
 .hamburger .line.open:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
+@media (max-width: 1100px) {
+  .home-first p {
+    padding: 0.5rem 15rem;
+  }
+  .about-write {
+    padding: 0.5rem 13rem;
+  }
+  .service-one {
+    width: 90%;
+  }
+  .areaa {
+    width: 35%;
+    height: 14.5rem;
+  }
+  .foot-one h3 {
+    /* padding-right: 1rem; */
+    font-size: 2.8rem;
+  }
+  .footer-one {
+    grid-template-columns: 50% 50%;
+  }
+}
 @media (max-width: 768px) {
   .nav-list {
     display: none;
@@ -443,9 +471,9 @@ a:hover {
     padding-right: 3rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home-first h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .home-first h3 {
     font-size: 1rem;
@@ -507,7 +535,7 @@ a:hover {
       #050505 96.81%
     );
     padding: 1rem;
-    height: 15rem;
+    height: 12.5rem;
     border: 1px solid #2b2b2b;
     border-radius: 9px;
   }
@@ -520,11 +548,11 @@ a:hover {
     margin-left: 2rem;
   }
   .foot-one h3 {
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     padding-right: 2rem;
   }
   .foot-two {
-    margin-left: -3rem;
+    margin-left: -2rem;
     margin-bottom: 2rem;
   }
   .footer-two {
